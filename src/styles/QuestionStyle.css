@@ -5,7 +5,7 @@
     padding-top: 150px;
     padding-bottom: 80px;
     width:100%;
-    min-height:100vh;
+    min-height: calc(100vh - 80px);
 }
 .q-container{
     padding:5px;
