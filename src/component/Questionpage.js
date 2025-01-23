@@ -97,7 +97,7 @@ function Questionpage() {
                       </Nav>
                   </Container>
               </Navbar>
-              <div className="boilerplate" style={{ backgroundColor: "#2d2d2d", padding: "15px" }}>
+              <div className="boilerplate" style={{ backgroundColor: "#2d2d2d", padding: "1px" }}>
               <textarea
                   value={boilerplate}
                   onChange={(e) => setBoilerplate(e.target.value)} // Updates the boilerplate state when the user edits the text
