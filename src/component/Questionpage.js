@@ -98,7 +98,7 @@ function Questionpage() {
                   </Container>
               </Navbar>
               <div className="boilerplate" style={{ color: "white", backgroundColor: "#2d2d2d", padding: "15px"}} >
-                  <pre >
+                  <pre style={{color:"var(--yellow)"}}>
                       {boilerplate || "Select a language to view the boilerplate code."}
                   </pre>
               </div>
