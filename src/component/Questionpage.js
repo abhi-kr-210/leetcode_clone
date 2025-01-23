@@ -5,7 +5,7 @@ import Header from './Header';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Col, Row } from 'react-bootstrap';
+import { Button, Col, Row } from 'react-bootstrap';
 
 function Questionpage() {
     const location = useLocation();
@@ -30,7 +30,7 @@ function Questionpage() {
             <Container>     
             <Row className="q-container d-flex justify-content-center align-items-start">
                 <Col lg={6}
-                    className="questions_detail mb-3 "
+                    className="questions_detail mb-3 mt-3"
                     style={{ color: "white" }}
                 >
                     <div>
@@ -75,7 +75,7 @@ function Questionpage() {
                                   gap: "10px",
                               }}
                           >
-                              <span style={{ color: "white", fontSize: "1rem" }}>
+                              <span className='select_language'>
                                   Select Language..
                               </span>
                               <select
@@ -97,13 +97,39 @@ function Questionpage() {
                       </Nav>
                   </Container>
               </Navbar>
-              <div className="boilerplate" style={{ color: "white", backgroundColor: "#2d2d2d", padding: "15px"}} >
-                  <pre style={{color:"var(--yellow)"}}>
-                      {boilerplate || "Select a language to view the boilerplate code."}
-                  </pre>
-              </div>
-                  
-                  </div>
+              <div className="boilerplate" style={{ backgroundColor: "#2d2d2d", padding: "15px" }}>
+              <textarea
+                  value={boilerplate}
+                  onChange={(e) => setBoilerplate(e.target.value)} // Updates the boilerplate state when the user edits the text
+                  style={{
+                      width: "100%",
+                      minHeight: "300px",
+                      color:  "var(--yellow)" , // Fetched text in yellow, user-typed in white
+                      backgroundColor: "#2d2d2d", // Background color remains the same
+                      padding: "6px",
+                      fontFamily: "monospace",
+                      fontSize: "14px",
+                      resize: "vertical",
+                      caretColor: "white", // Caret (cursor) color remains white
+                  }}
+              />
+          </div>
+              <div className='d-flex justify-content-center' style={{padding:"15px"}}>
+              <Button className='btn btn-primary'
+              style={{
+                backgroundColor: "#3d5800",
+                color: "white",
+                border: "none",
+                padding: "10px 20px",
+                borderRadius: "5px",
+              }}
+              onMouseOver={(e) => (e.target.style.backgroundColor = "#228B22")} // Slightly lighter green
+              onMouseOut={(e) => (e.target.style.backgroundColor = "#3d5800")}
+              
+              >Submit</Button>
+               </div>
+          </div>
+
                 </Col>
             </Row>
             </Container>

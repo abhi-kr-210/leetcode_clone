@@ -31,3 +31,12 @@
 .compiler .navbar {
     width:100%;
 }
+.select_language{
+    color:rgb(250, 246, 0);
+    font-size: 1rem;
+}
+@media (max-width: 500px) {
+    .select_language{
+        font-size: 0.8rem;
+    }
+}
