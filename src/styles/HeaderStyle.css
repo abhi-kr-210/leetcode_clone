@@ -1,0 +1,97 @@
+/* Header CSS */
+header .navbar {
+    position: absolute;
+    width: 90%;
+    top:20px;
+    background-color: #265c561f !important;
+    z-index: 1000;
+    border: 2px solid rgba(40, 82, 89, 0.8);
+    border-radius: 25px;
+    box-shadow: 0 0 4px rgba(66, 101, 66, 0.7);
+} 
+.navbar-toggler {
+    background-color: #7fc3c2c7 !important; /* White background for the button */
+    border-color: #7fc3c2c7 !important;     /* Optional: White border around the button */
+  }
+.navbar-brand{
+    width:70px;
+    padding:5px;
+  }
+
+  @keyframes stickyTransition {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+  header .logo img {
+    width: 100%;
+    max-width: inherit;
+    max-height: 80px;
+    transform: scale(1.2);
+    
+  }
+  header .nav-link {
+    display: inline-flex;
+    justify-content: center;
+    color: rgb(2, 2, 2);
+    padding: 0 1.325rem !important;
+    font-size: 1.222rem;
+    font-weight: 450;
+    font-family: var(--oswald-font);
+    text-transform: uppercase;
+    -webkit-transition: all 15ms ease-in-out;
+    -ms-transition: all 15ms ease-in-out;
+    -o-transition: all 15ms ease-in-out;
+    -moz-transition: all 15ms ease-in-out;
+    transition: all 15ms ease-in-out;
+  }
+  
+  header .sticky .nav-link {
+    color: var(--light-black);
+  }
+  header .nav-link:hover {
+    color: var(--yellow);
+  }
+  
+
+  
+  /* Media Query CSS */
+
+  @media (max-width: 575px) {
+    header .logo img{
+      padding-left: 9px;
+    
+    }
+    .navbar-brand {
+        width: 70px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    header .navbar {
+      background-color: var(--white);
+    }
+    header .navbar-toggler {
+      border: none;
+    }
+    header .navbar-toggler:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    header .navbar-toggler-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+    header .nav-link {
+      color: var(--light-black);
+      padding: 1rem !important;
+    }
+  }

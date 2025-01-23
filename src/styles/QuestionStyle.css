@@ -1,0 +1,33 @@
+.question_page{
+    background: linear-gradient(326deg, rgb(42 66 83), rgb(14 31 33), rgb(4 4 4));
+    position: relative;
+    background-attachment: fixed;
+    padding-top: 150px;
+    padding-bottom: 80px;
+    width:100%;
+    min-height:100vh;
+}
+.q-container{
+    padding:5px;
+    border:1px solid rgba(129, 129, 129, 0.583);
+}
+.border_div{
+    border-top: 1px solid rgb(106, 106, 106);
+    width:70%;
+    margin-bottom: 3px;
+}
+
+.form-select:focus {
+    border-color: inherit!important; /* Resets to the default border color */
+    outline: none!important;        /* Removes the focus outline */
+    box-shadow: none!important;     /* Removes the focus box-shadow */
+    cursor: pointer;
+}
+.compiler{
+   
+    min-height:400px !important;
+    background-color:#2d2d2d;
+}
+.compiler .navbar {
+    width:100%;
+}

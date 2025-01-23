@@ -1,0 +1,101 @@
+.dashboard_container{
+    background: linear-gradient(326deg, rgb(42 66 83), rgb(14 31 33), rgb(4 4 4));
+    position: relative;
+    background-attachment: fixed;
+    padding-top: 150px;
+    padding-bottom: 80px;
+    width:100%;
+    min-height:100vh;
+
+}
+.location_input_container{
+    background: linear-gradient(326deg, rgb(19 32 41), rgb(5 12 13), rgb(4 4 4));
+    border: 1px solid rgba(40, 82, 89, 0.8);
+    border-radius: 25px;
+    padding: 10px;
+    height:50px;
+    box-shadow: 0 0 4px rgba(66, 101, 66, 0.7);
+    width:50%;
+    margin:auto ;
+    margin-bottom: 70px;
+}
+.location_input_container input{
+    background-color: transparent;
+    width:100%;
+    height:100%;
+    border:none;
+    outline:none;
+    color: #02c5da;
+    padding-left: 21px;
+}
+@media (max-width: 992px) {
+    .location_input_container{
+        width: 80%;
+    }
+}
+/* table rows*/
+/* Add box shadow and spacing between rows */
+.table_rows {
+    box-shadow: 0 6px 6px rgb(0 152 185 / 44%); /* Subtle shadow for classic look */
+    margin-bottom: 10px; /* Adds spacing between rows */
+    border-radius: 8px; /* Optional: Rounds the edges of the row */
+    background-color: #fbfbfb; /* Ensure a white background for the rows */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth animations */
+
+  }
+  
+  /* Hover effect to elevate the row */
+  .table_rows:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+    cursor: pointer;
+  }
+  
+  /* Table header styling */
+  .tableheader {
+    background-color: #ffffff; /* Dark background for header */
+    text-align: left; /* Align text to the left */
+    
+  }
+  
+  /* Table container styling */
+ .data_table { 
+    padding: 20px; /* Add padding around the table */
+    border-radius: 8px; /* Rounded corners for the table container */
+    background-color: #f9f9f900; /* Light background for better contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the table container */
+  }
+  .table {
+    border-spacing: 0 10px; /* Horizontal spacing: 0, Vertical spacing: 10px */
+    border-collapse: separate; /* Ensure border-spacing works */
+  }
+  .table_rows td {
+    height: 50px; /* Set a fixed height for table rows */
+    padding: 15px 10px; /* Add more padding for taller rows */
+    vertical-align: middle; /* Align text to the middle */
+  }
+  table tr {
+    border: none !important; /* Remove borders */
+    border-color: transparent !important; /* Ensure no residual border color */
+    border-width: 0 !important; /* Set border width to zero */
+    border-style: none !important; /* Explicitly set border style to none */
+}
+  /* Pagination container */
+.pagination .page-link {
+    background-color: rgb(42, 66, 83); /* Matches the theme */
+    color: #88e1ff; /* Light blue text for visibility */
+    border: none; /* No border */
+    margin: 0 5px; /* Add spacing between pagination buttons */
+    border-radius: 4px; /* Slightly rounded edges */
+    transition: background-color 0.3s ease;
+}
+
+.pagination .page-link:hover {
+    background-color: #88e1ff; /* Light blue background on hover */
+    color: #1a1a1a; /* Darker text on hover */
+}
+
+.pagination .active .page-link {
+    background-color: #88e1ff; /* Active page button background */
+    color: #1a1a1a; /* Dark text for contrast */
+}
